@@ -1,0 +1,13 @@
+
+body{
+    background-color: #8E4EB4;
+}
+
+.barra ul {
+    list-style: none;
+}
+
+.barra ul li{
+    background-color: #8E4EB4;
+    font-size: 2em;
+} 

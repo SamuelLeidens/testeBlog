@@ -1,0 +1,39 @@
+Um cadastro de blog, blog irá conter categorias, terão noticias, as noticias terao vinculo com categorias
+e no blog terá filtro, que a pessoa possa escolher a categoria e irá buscar as noticias desejadas, cadastros terao q ter filtro.
+
+
+1- logo ft snoopp dogg
+2- cadastro de categorias: id, nome, descrição, ordem, status 
+3- cadastro de noticias: Id , nome , descrição , data, autor , ordem , status, 
+4- a pessoa téra um formulario que terão select onde listará as categorias e clicando em um botão, irá faltrar as noticias de acordo com as categorias
+5- Deve ter a opção de clicar na noticia e levar para a página interna
+
+*EXTRA: Cadastro de imagem na noticia, e exibir essa imagem na lista 
+
+
+
+
+
+	ORIGINAL
+CREATE DATABASE blogbeck;
+
+CREATE TABLE `categorias` (
+`id` INT (11) NOT NULL AUTO_INCREMENT,
+`nome` varchar(255) DEFAULT NULL,
+`descricao` text,
+`ordem` text,
+`status` enum('s','n') DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `noticias` (
+`id` INT (11) NOT NULL AUTO_INCREMENT,
+`nome` varchar(255) DEFAULT NULL,
+`descricao` TEXT,
+`data` TIMESTAMP DEFAULT NULL,
+`autor` VARCHAR(255) NOT NULL,
+`ordem` text,
+`status` enum('s','n') DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
